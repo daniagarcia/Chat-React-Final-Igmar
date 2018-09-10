@@ -32,7 +32,7 @@ export default class LoginView extends Component{
         this.formData.append("usu", this.usuario)
         this.formData.append("psw", this.password)
         try{  
-         fetch('http://192.168.43.151:3333/login', {
+         fetch('http://192.168.1.130:3333/login', {
             method: 'POST',
             body: this.formData,
             })

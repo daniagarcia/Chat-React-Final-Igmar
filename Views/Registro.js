@@ -36,7 +36,7 @@ formaData = new FormData();
         this.formaData.append('psw',this.password)
 
         try{
-            fetch('http://192.168.43.151:3333/insertarUser',{
+            fetch('http://192.168.1.130:3333/insertarUser',{
                 method:'POST',
                 body: this.formaData,                
             })

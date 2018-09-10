@@ -40,7 +40,7 @@ export default class UsuariosGrupos extends Component{
     }
 
     componentDidMount(){
-         fetch('http://192.168.43.151:3333/users',{
+         fetch('http://192.168.1.130:3333/users',{
             method: 'GET',
          })
          .then((response) => response.json())
@@ -58,7 +58,7 @@ export default class UsuariosGrupos extends Component{
 
         async CargarGrupos(){
           var idusuario = await AsyncStorage.getItem('id_usuario')
-          fetch('http://192.168.43.151:3333/grupos/' + idusuario,{
+          fetch('http://192.168.1.130:3333/grupos/' + idusuario,{
             method: 'GET',
          })
          .then((response) => response.json())
